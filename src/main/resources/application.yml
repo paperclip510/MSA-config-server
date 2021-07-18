@@ -1,0 +1,11 @@
+server:
+  port: 8888
+  
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///Users/kdh/rep_spring_cloud_ecommerce/git-local-repo
