@@ -4,8 +4,27 @@ server:
 spring:
   application:
     name: config-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+  profiles:
+    active: native
   cloud:
     config:
       server:
+        native:
+          search-locations: file://${user.home}/rep_spring_cloud_ecommerce/git-local-repo
         git:
-          uri: file:///Users/kdh/rep_spring_cloud_ecommerce/git-local-repo
+          default-label: main
+          uri: https://github.com/paperclip510/MSA-config-repository
+          #uri: file:///Users/kdh/rep_spring_cloud_ecommerce/git-local-repo
+          #username: github id
+          #password: github password
+          
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh
