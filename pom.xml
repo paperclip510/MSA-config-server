@@ -42,7 +42,7 @@
 			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
 		</dependency>
 		
-		<!-- spring cloud bus amqp -->
+		<!-- spring cloud bootstrap -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-bootstrap</artifactId>

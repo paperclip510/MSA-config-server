@@ -1,0 +1,6 @@
+encrypt:
+#  key: 1qa2ws3ed1qa2ws2ed1s1!@#QEd1qwe
+  key-store:
+    location: file://${user.home}/keystore/kdhApiEncryptionKey.jks
+    password: 1q2w3e4r
+    alias: kdhApiEncryptionKey
